@@ -11,4 +11,4 @@ docker-compose up
 
 After waiting 3-5 mins. You will have result.
 
-![](./res/console.png)
+![](./resources/console.png)
