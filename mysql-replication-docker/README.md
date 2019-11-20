@@ -58,15 +58,20 @@ exit
 ```
 
 ### Step 3
-# Get master's informations
+
+Get master's informations
+
+```sh
 docker exec -u root -it mysql_01 /bin/bash
 mysql -uroot -ppassword -e 'show master status \G'
 getent hosts
-# we need 3 infor: Postion, File. Please note them to use for setting replication.
-# File: mysql-bin.000003, Position: 833 -> 1081, IP: 172.17.0.2 - 30b6668d4366
 exit
+```
 
-# == Step 4
+we need 3 infor: Postion, File. Please note them to use for setting replication.
+File: mysql-bin.000003, Position: 833 -> 1081, IP: 172.17.0.2 - 30b6668d4366
+
+# Step 4:
 
 Get 2 slave informations
 
